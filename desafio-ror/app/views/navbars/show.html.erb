@@ -1,0 +1,14 @@
+<div class="form-new">
+  <div class="input-form">
+    <p style="color: green"><%= notice %></p>
+
+    <%= render @navbar %>
+
+    <div>
+      <%= link_to t('common.edit'), edit_navbar_path(@navbar) %> |
+      <%= link_to t('common.back'), navbars_path %>
+
+      <%= button_to t('common.destroy'), @navbar, method: :delete %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="form-new">
+  <div class="input-form">
+    <h1>Editing navbar</h1>
+
+    <%= render "form", navbar: @navbar %>
+
+    <br>
+
+    <div>
+      <%= button_to t('common.show'), @navbar, :class => "btn btn-primary" %> |
+      <%= button_to t('common.back'), navbars_path, :class => "btn btn-primary" %>
+    </div>
+  </div>
+</div>
