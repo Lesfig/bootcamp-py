@@ -1,0 +1,14 @@
+<div class="form-new">
+  <div class="input-form">
+    <p style="color: green"><%= notice %></p>
+
+    <%= render @product %>
+
+    <div>
+      <%= link_to t('common.edit'), edit_product_path(@product) %> |
+      <%= link_to t('common.back'), products_path %>
+
+      <%= button_to t('common.destroy'), @product, method: :delete %>
+    </div>
+  </div>
+</div>

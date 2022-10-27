@@ -1,0 +1,29 @@
+<div class="form-new">
+  <div class="input-form">
+    <p style="color: green"><%= notice %></p>
+
+    <h1>Posts</h1>
+    <table class="table">
+    <thead>
+      <tr>
+        <th scope="col"><%= t('posts.imagen') %></th>
+        <th scope="col"><%= t('posts.title') %></th>
+        <th scope="col"><%= t('posts.content') %></th>
+      </tr>
+      <tbody>
+          <% @posts.each do |post| %>
+          <tr>
+            <div id="<%= dom_id post %>">
+            <td> <%= post.imagen %></td>
+            <td><%= post.title %></td>
+            <td><%= post.content %></td>
+            <td> <%= link_to t('common.show'), post %> </td>
+          </tr>
+          <% end %>
+      </tbody>
+      </div>
+    </table>
+
+    <%= link_to t('common.new'), new_post_path %>
+  </div>
+</div>

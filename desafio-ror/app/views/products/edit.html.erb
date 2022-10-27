@@ -1,0 +1,14 @@
+<div class="form-new">
+  <div class="input-form">
+    <h1><%= t('common.editing_title')%> |</h1>
+
+    <%= render "form", product: @product %>
+
+    <br>
+
+    <div>
+      <%= link_to t('common.show'), @product %> |
+      <%= link_to t('common.back'), products_path %>
+    </div>
+   </div>
+</div>

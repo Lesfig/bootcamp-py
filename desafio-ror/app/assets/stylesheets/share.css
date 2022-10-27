@@ -1,0 +1,10 @@
+.form-new{
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    width: 60%;
+    box-shadow: 0 .5rem  30px rgba(0, 0, 0, .2);
+}
+.form-new .input-form{
+    padding: 50px;
+}

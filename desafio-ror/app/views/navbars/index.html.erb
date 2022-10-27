@@ -1,0 +1,26 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Navbar</h1>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col"><%= t('navbars.url') %></th>
+        <th scope="col"><%= t('navbars.label') %></th>
+      </tr>
+      <tbody>
+          <% @navbars.each do |navbar| %>
+          <tr>
+            <div id="<%= dom_id navbar %>">
+            <td> <%= navbar.url %></td>
+            <td><%= navbar.label %></td>
+            <td> <%= link_to t('common.show'), navbar %> </td>
+          </tr>
+          <% end %>
+      </tbody>
+      </div>
+    </table>
+
+
+<%= link_to t('common.new'), new_navbar_path %>
+</div>

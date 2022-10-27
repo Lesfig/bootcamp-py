@@ -1,0 +1,13 @@
+<div class="form-new">
+  <div class="input-form">
+    <h1><%= t('posts.new_post')%></h1>
+
+    <%= render "form", post: @post %>
+
+    <br>
+
+    <div>
+      <%= link_to t('common.back'), posts_path %>
+    </div>
+  </div>
+</div>

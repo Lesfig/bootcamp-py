@@ -1,0 +1,38 @@
+
+#media-object .container{
+    display: flex;
+    text-align: center;
+    padding: 100px 10px;
+}
+#media-object .text-media{
+    width: 100%;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#media-object .text-large{
+    text-overflow:ellipsis;
+    overflow:hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+        
+}
+
+#media-object .img-media{
+    /*background-image: url("/images/media-object.jpeg");*/
+    background-size: cover;
+    background-position: center left;
+    height: 150px;
+    width: 150px; 
+    margin-left: 50px;
+}
+
+#media-object h2{
+    margin-top: 0;
+    font-size: 20px;
+}

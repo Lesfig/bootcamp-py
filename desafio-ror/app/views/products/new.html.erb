@@ -1,0 +1,13 @@
+<div class="form-new">
+  <div class="input-form">
+    <h1><%= t('common.new')%> </h1>
+
+    <%= render "form", product: @product %>
+
+    <br>
+
+    <div>
+      <%= link_to t('common.back'), products_path %>
+    </div>
+  </div>
+</div>
